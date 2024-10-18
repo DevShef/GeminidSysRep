@@ -1,0 +1,32 @@
+<template>
+    <lightning-card
+        title="Datatable Custom Data Type"
+        icon-name="custom:custom62"
+            ><lightning-helptext 
+                content="renderedCallback Method in JS, colored the card."
+            ></lightning-helptext>
+        <div class="slds-var-m-around_medium dataTableColor">
+            <template lwc:if={contacts.data}>
+                <c-custom-data-types
+                    key-field="Id"
+                    data={contacts.data}
+                    columns={columns}
+                    hide-checkbox-column="true"
+                >
+                </c-custom-data-types>
+            </template>
+            <template lwc:elseif={contacts.error}>
+                <c-error-panel errors={contacts.error}></c-error-panel>
+            </template>
+        </div>
+        <c-view-source source="lwc/datatableCustomDataType" slot="footer">
+            <div class="footer-text">
+                Display data in a table with a custom data type: a contact picture
+                (see customDataTypes component).
+                    <lightning-helptext 
+                        content="footer-text from JS colored the text"
+                    ></lightning-helptext>
+            </div>
+        </c-view-source>
+    </lightning-card>
+</template>

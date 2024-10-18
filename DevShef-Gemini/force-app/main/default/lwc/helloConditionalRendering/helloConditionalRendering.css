@@ -1,0 +1,19 @@
+.showDetailsColor{
+    background-color: rgb(240, 222, 198);
+    color: rgb(12, 99, 12);
+    font-weight: bold;
+}
+
+.notShowDetailsColor{
+    background-color: rgb(216, 229, 190);
+    color: rgb(126, 29, 68);
+    font-weight: bold;
+    
+}
+
+.viewSourceColor{
+    color: rgb(183, 101, 42);
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

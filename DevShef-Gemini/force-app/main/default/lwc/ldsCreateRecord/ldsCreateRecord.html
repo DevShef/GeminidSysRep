@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="LdsCreateRecord" icon-name="standard:record">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                label="Id"
+                disabled
+                data-id="accountId"
+                value={accountId}
+            ></lightning-input>
+            <lightning-input
+                label="Name"
+                data-id="name"
+                onchange={handleNameChange}
+                class="slds-var-m-bottom_x-small"
+            ></lightning-input>
+            <lightning-button
+                label="Create Account"
+                variant="brand"
+                onclick={createAccount}
+            ></lightning-button>
+        </div>
+
+       <div class="slds-var-m-around_medium viewSource"> 
+                <lightning-helptext 
+                    content="viewSource CSS class is coloring the 'view source' in pink"
+                ></lightning-helptext>
+            <c-view-source source="lwc/ldsCreateRecord" slot="footer">
+                <div class="textColor">
+                        <lightning-helptext 
+                            content="Text color is cyan by CSS class textColor"
+                        ></lightning-helptext>
+                    Create a record without writing server-side code. Always consider
+                    lightning-record-form and lightning-record-edit-form first.
+                </div>
+            </c-view-source>
+        </div>
+    </lightning-card>
+</template>

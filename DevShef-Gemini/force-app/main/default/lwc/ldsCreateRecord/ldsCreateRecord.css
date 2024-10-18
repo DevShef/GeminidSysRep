@@ -1,0 +1,17 @@
+.helloDesigner{
+    background-color: rgb(238, 217, 167);
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: bolder;
+    color: rgb(224, 69, 118);
+}
+
+.viewSource{
+    color: rgb(171, 34, 103);
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.textColor{
+    color: darkcyan;
+}

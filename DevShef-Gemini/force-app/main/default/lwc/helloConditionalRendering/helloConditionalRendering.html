@@ -1,0 +1,32 @@
+<template>
+    <lightning-card
+        title="HelloConditionalRendering"
+        icon-name="custom:custom14"
+    >
+        <div class="slds-var-m-around_medium showDetailsColor">
+                <lightning-helptext 
+                    content="showDetailsColor class is CSS, to color the text"
+                ></lightning-helptext>
+            <lightning-input
+                type="checkbox"
+                label="Show details"
+                onchange={handleChange}
+            ></lightning-input>
+
+            <div class="slds-var-m-vertical_medium showDetailsColor">
+                <template lwc:if={areDetailsVisible}>
+                    These are the details!
+                </template>
+                <template lwc:else> <div class="notShowDetailsColor">showing details.</div>  </template>
+            </div>
+                
+        </div>
+
+        <c-view-source class="viewSourceColor" source="lwc/helloConditionalRendering" slot="footer">
+            Conditionally render elements.
+                <lightning-helptext class="helptextSize" 
+                   content="The viewSourceColor class sets a light green background, uses a medium font-size, bolds the text, and colors the font chocolate."
+                ></lightning-helptext>
+        </c-view-source>
+    </lightning-card>
+</template>

@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="HelloBinding" icon-name="custom:custom14">
+        
+        <div class="slds-var-m-around_medium helloBindingColor">
+                    <lightning-helptext class="helptextSize"
+                        content="The helloBindingColor class sets a light green background, uses an x-large font-size, bolds the text, and colors the font chocolate."
+                    ></lightning-helptext>
+            <p>Hello, {greeting}!</p>
+            <lightning-input
+                label="Name"
+                value={greeting}
+                onchange={handleChange}
+            ></lightning-input>
+        </div>
+            
+        <c-view-source class="viewSourceColor" source="lwc/helloBinding" slot="footer">
+            Change the value of a bound property when the value of an input
+            field changes. Type something in the input field to see the recipe
+            in action.
+                <lightning-helptext class="helptextSize" 
+                   content="The viewSourceColor class sets a light green background, uses a medium font-size, bolds the text, and colors the font chocolate."
+                ></lightning-helptext>
+        </c-view-source>
+    </lightning-card>
+</template>
