@@ -1,7 +1,8 @@
 <template>
+    <div class="info-background">
     <lightning-card title="ContactInfo" icon-name="custom:custom30">
         <template lwc:if={contact.data}>
-            <div class="slds-align_absolute-center">
+            <div class="slds-align_absolute-center contact-details-container">
                 <div class="slds-var-m-around_medium slds-text-align_center">
                     <template lwc:if={picture}>
                         <img
@@ -30,9 +31,16 @@
         </template>
 
         <c-view-source source="lwc/contactInfo" slot="footer">
-            Shows contact details. This component is the target of the dynamic
-            interaction. It handles the event fired by the source component (see
-            contactSelector component).
+            <div class="footer-text">
+                    <lightning-helptext
+                        content="footer-text is in JS, changing the text color."
+                    ></lightning-helptext>
+                Shows contact details. This component is the target of the dynamic
+                interaction. It handles the event fired by the source component (see
+                contactSelector component).
+            </div>
+          
         </c-view-source>
     </lightning-card>
+</div>
 </template>

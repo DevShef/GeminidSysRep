@@ -1,6 +1,8 @@
 c-child {
+    font-size: small;
+    font-weight: 100;
     position: relative;
-    border: solid 1px #ecebea;
+    border: solid 1px #9a480e;
     border-radius: 4px;
     display: block;
     padding: 14px 8px 8px 8px;
@@ -9,10 +11,12 @@ c-child {
 
 c-child:before {
     content: 'c-child';
-    color: #dddbda;
+    font-size: small;
+    color: #c65c2b;
+    font-weight: bold;
     position: absolute;
     top: -16px;
     left: 4px;
-    background-color: #ffffff;
+    background-color: #f9dbb6;
     padding: 0 4px;
 }

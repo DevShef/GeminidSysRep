@@ -1,6 +1,8 @@
 <template>
+    <div class="page-background">
     <lightning-card title="EventWithData" icon-name="standard:logging">
         <template lwc:if={contacts.data}>
+            <div class="layout-container">
             <lightning-layout class="slds-var-m-around_medium">
                 <lightning-layout-item>
                     <!-- c-contact-list-item emits a non-bubbling event so each element must have a listener-->
@@ -34,14 +36,26 @@
                     </template>
                 </lightning-layout-item>
             </lightning-layout>
-        </template>
+        </div>
+    </template>
+
         <template lwc:elseif={contacts.error}>
             <c-error-panel errors={contacts.error}></c-error-panel>
         </template>
+       
+    <div class="slds-var-m-around_medium viewSBackground">
         <c-view-source source="lwc/eventWithData" slot="footer">
-            Child-to-parent communication using a custom event that passes data
-            to the parent component. Click an item in the list to see the recipe
-            in action.
+            <div class="footer-text">
+                    <lightning-helptext 
+                        content="footer-text is in LWC, changing the text color."
+                    ></lightning-helptext>
+                Child-to-parent communication using a custom event that passes data to the parent component. Click an item in the list to see the recipe in action.
+            </div>
+                
         </c-view-source>
+    </div>
     </lightning-card>
+    </div>
+
 </template>
+

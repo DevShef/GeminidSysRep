@@ -3,7 +3,7 @@
         title="ApexImperativeMethodWithComplexParams"
         icon-name="custom:custom63"
     >
-        <div class="slds-var-m-around_medium">
+        <div class="slds-var-m-around_medium card-container">
             <lightning-input
                 label="String"
                 type="string"
@@ -45,9 +45,14 @@
         <c-view-source
             source="lwc/apexImperativeMethodWithComplexParams"
             slot="footer"
-        >
+        ><div class="footer-text">
+                <lightning-helptext 
+                    content="footer-text is in JS, coloring the text."
+                ></lightning-helptext>
             Call an Apex method with complex parameters imperatively. These
             parameters can be custom Apex types, as well as sObjects.
+        </div>
+            
         </c-view-source>
     </lightning-card>
 </template>

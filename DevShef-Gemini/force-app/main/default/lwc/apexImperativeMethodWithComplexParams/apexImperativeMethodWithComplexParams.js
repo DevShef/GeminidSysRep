@@ -44,4 +44,35 @@ export default class ApexImperativeMethodWithComplexParams extends LightningElem
             this.error = error;
         }
     }
+
+
+    renderedCallback() {
+        const cardContainer = this.template.querySelector('.card-container');
+        if (cardContainer) {
+            cardContainer.style.backgroundColor = '#f0f0f0';  
+            cardContainer.style.fontSize = '14px';
+            cardContainer.style.color = '#102b85'                  
+        }
+
+        const inputElements = this.template.querySelectorAll('lightning-input');
+        inputElements.forEach(input => {
+            input.style.border = '1px solid #0070d2'; 
+            input.style.padding = '10px';            
+            input.style.marginBottom = '10px';        
+        });
+
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.color = 'darkred';  
+            viewSource.style.fontSize = '12px';  
+            viewSource.style.fontWeight = 'bold'; 
+        }
+
+        const footerText = this.template.querySelector('.footer-text');
+        if (footerText) {
+            footerText.style.color = 'green';   
+            footerText.style.fontWeight = 'bold';   
+            footerText.style.fontSize = '14px';    
+        }
+    }
 }

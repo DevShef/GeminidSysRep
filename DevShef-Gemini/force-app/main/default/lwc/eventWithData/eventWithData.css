@@ -15,10 +15,10 @@ c-contact-list-item {
 
 c-contact-list-item:before {
     content: 'c-contact-list-item';
-    color: rgb(221, 219, 218);
-    position: absolute;
-    top: -9px;
-    left: var(--lwc-varSpacingXxSmall, 4px);
-    background-color: var(--lwc-colorBackgroundAlt, #ffffff);
-    padding: 0 var(--lwc-varSpacingXxSmall, 4px);
+    color: rgb(232, 234, 235);
+    background-color: var(--lwc-colorBackgroundAlt, #efd6d6);
+}
+
+.viewSBackground{
+    background-color:#eaf1f5 ;
 }

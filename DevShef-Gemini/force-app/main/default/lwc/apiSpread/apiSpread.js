@@ -20,4 +20,28 @@ export default class ApiSpread extends LightningElement {
             };
         }
     }
+
+    renderedCallback() {
+
+        const formContainer = this.template.querySelector('.form-container');
+        if (formContainer) {
+            formContainer.style.backgroundColor = '#c3dbd7'; 
+        }
+
+        const footerText = this.template.querySelector('.footer-text');
+        if (footerText) {
+            footerText.style.color = 'navy';
+            footerText.style.fontWeight = 'bold';
+            footerText.style.fontSize = '13px';
+
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.backgroundColor = '#bfe6eb';
+            viewSource.style.color = 'brown';
+            viewSource.style.fontWeight = 'bold';
+            viewSource.style.fontSize = '13px';
+        }
+    }
+
+    }
 }

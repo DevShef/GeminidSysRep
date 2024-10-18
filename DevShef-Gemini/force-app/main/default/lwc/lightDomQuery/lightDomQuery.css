@@ -7,10 +7,10 @@ c-light-dom-query-child {
 
 c-light-dom-query-child:before {
     content: 'c-light-dom-query-child';
-    color: rgb(221, 219, 218);
+    color: rgb(233, 238, 238);
     position: absolute;
     top: -9px;
     left: var(--lwc-varSpacingXxSmall, 4px);
-    background-color: var(--lwc-colorBackgroundAlt, #ffffff);
+    background-color: var(--lwc-colorBackgroundAlt,rgb(202, 240, 240));
     padding: 0 var(--lwc-varSpacingXxSmall, 4px);
 }

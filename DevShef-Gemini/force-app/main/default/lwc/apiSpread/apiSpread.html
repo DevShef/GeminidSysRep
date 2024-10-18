@@ -1,6 +1,6 @@
 <template>
     <lightning-card title="ApiSpread" icon-name="custom:custom14">
-        <div class="slds-var-m-around_medium">
+        <div class="slds-var-m-around_medium form-container">
             <lightning-input
                 name="firstName"
                 label="First Name"
@@ -16,8 +16,13 @@
             <c-child lwc:spread={props}></c-child>
         </div>
 
-        <c-view-source source="lwc/apiSpread" slot="footer">
-            Pass data to a child component using lwc:spread directive
-        </c-view-source>
+            <c-view-source source="lwc/apiSpread" slot="footer">
+                <div class="footer-text">
+                        <lightning-helptext 
+                            content="footer-text is in JS, changing the text color."
+                        ></lightning-helptext>
+                    Pass data to a child component using lwc:spread directive
+                </div>
+            </c-view-source>
     </lightning-card>
 </template>

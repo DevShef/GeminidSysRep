@@ -43,20 +43,19 @@ Zxcfdsa
     renderedCallback() {
         const cardContainer = this.template.querySelector('.card-container');
         if (cardContainer) {
-            cardContainer.style.backgroundColor = '#f0f0f0';  // Arka plan rengini gri yapalım
-            cardContainer.style.borderRadius = '10px';         // Kenarlarını yuvarlayalım
-            cardContainer.style.padding = '15px';              // İçerik için boşluk ekleyelim
+            cardContainer.style.backgroundColor = '#dadce1';  
+            cardContainer.style.borderRadius = '10px';         
+            cardContainer.style.padding = '15px';             
         }
     
         const inputElements = this.template.querySelectorAll('lightning-input');
         inputElements.forEach(input => {
-            input.style.border = '3px solid #000080';  
+            input.style.border = '2px solid #000080';  
             input.style.padding = '10px';             
             input.style.marginBottom = '10px'; 
             input.style.width = '100%';
             input.style.fontSize = '16px';
             input.style.fontWeight = 'bold';
-            input.style.borderRadius = '10px';
             
         });
 
@@ -64,7 +63,7 @@ Zxcfdsa
         if (viewSource) {
             viewSource.style.color = 'darkblue'; 
             viewSource.style.fontWeight = 'bold';
-            viewSource.style.fontSize = '10px';
+            viewSource.style.fontSize = '12px';
             viewSource.style.fontStyle = 'italic'; 
 
         }
@@ -73,8 +72,7 @@ Zxcfdsa
         if (footerText) {
             footerText.style.color = 'darkblue';  
             footerText.style.fontWeight = 'normal';   
-            footerText.style.fontSize = '12px';     
-            footerText.style.marginTop = '15px';  
+            footerText.style.fontSize = '13px';   
         }
     }
 

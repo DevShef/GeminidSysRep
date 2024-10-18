@@ -1,6 +1,7 @@
 <template>
+    <div class="page-background">
     <lightning-card title="ContactSelector" icon-name="custom:custom29">
-        <div class="slds-card__body slds-card__body_inner">
+        <div class="slds-card__body slds-card__body_inner selector-container">
             <template lwc:if={contactOptions}>
                 <lightning-combobox
                     label="Select a Contact"
@@ -16,9 +17,15 @@
             </template>
         </div>
         <c-view-source source="lwc/contactSelector" slot="footer">
-            Configure Interactions in the Lightning App Builder. This component
-            fires a custom event that can be handled by a target component (see
-            contactInfo component).
+            <div class="footer-text">
+                    <lightning-helptext 
+                        content="footer-text is in JS, changing the text color."
+                    ></lightning-helptext>
+                Configure Interactions in the Lightning App Builder. This component
+                fires a custom event that can be handled by a target component (see
+                contactInfo component).
+            </div>
         </c-view-source>
     </lightning-card>
+    </div>
 </template>
