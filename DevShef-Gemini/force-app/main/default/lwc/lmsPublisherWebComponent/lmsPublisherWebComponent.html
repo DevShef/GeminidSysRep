@@ -15,11 +15,17 @@
         </div>
 
         <c-view-source source="lwc/lmsPublisherWebComponent" slot="footer">
-            Publish a Lightning Message Service message for other LWCs, Aura
-            components, and Visualforce pages to respond to. This component
-            publishes the <strong>Record_Selected__c</strong> event. Click a
-            contact in the list to notify subscribers on this page. The selected
-            contact detail should then appear in the subscribers.
+            <div class="footer-text">
+                    <lightning-helptext 
+                        content="footer-text is in JS, coloring the footer text."
+                    ></lightning-helptext>
+                Publish a Lightning Message Service message for other LWCs, Aura
+                components, and Visualforce pages to respond to. This component
+                publishes the <strong>Record_Selected__c</strong> event. Click a
+                contact in the list to notify subscribers on this page. The selected
+                contact detail should then appear in the subscribers.
+            </div>
+           
         </c-view-source>
     </lightning-card>
 </template>

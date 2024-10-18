@@ -1,19 +1,17 @@
-.myColor{
-    background: tan;
-}
-
 .helloExpr {
     background-color: rgb(168, 196, 243);
-    font-size: large;
+    font-size: normal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: bold;
-    color: rgb(38, 9, 74);
+    color: rgb(24, 41, 73);
+    padding: 10px;
 }
 
 .viewSource{
     color: chocolate;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-top: 15px;
 }
 

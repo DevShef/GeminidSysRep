@@ -4,7 +4,7 @@
         title="Datatable Inline Edit With Apex"
         icon-name="custom:custom62"
     >
-        <div class="slds-var-m-around_medium">
+        <div class="slds-var-m-around_medium table-container">
             <template lwc:if={contacts.data}>
                 <lightning-datatable
                     key-field="Id"
@@ -21,8 +21,14 @@
             </template>
         </div>
         <c-view-source source="lwc/datatableInlineEditWithApex" slot="footer">
-            Display data in a table with inline editing for multiple rows using
-            Apex.
+            <div class="footer-text">
+                <lightning-helptext 
+                  content="footer-text is in JS, coloring the footer"
+                ></lightning-helptext>
+                Display data in a table with inline editing for multiple rows using
+                Apex.
+            </div>
+            
         </c-view-source>
     </lightning-card>
 </template>

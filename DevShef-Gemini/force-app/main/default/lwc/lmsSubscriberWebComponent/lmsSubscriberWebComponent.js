@@ -76,4 +76,29 @@ export default class LmsSubscriberWebComponent extends LightningElement {
             })
         );
     }
+
+
+    renderedCallback() {
+        const cardContainer = this.template.querySelector('lightning-card');
+        if (cardContainer) {
+            cardContainer.style.backgroundColor = '#f9f9f9';  
+            cardContainer.style.fontSize = '16px';
+            cardContainer.style.fontWeight = 'bold'; 
+        }
+
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.color = 'darkred'; 
+            viewSource.style.fontWeight = 'bold';
+            viewSource.style.fontSize = '14px';
+        }
+
+        const footerText = this.template.querySelector('.footer-text');
+        if (footerText) {
+            footerText.style.color = '#2a85d0'; 
+            footerText.style.fontWeight = 'normal';
+            footerText.style.fontSize = '14px';
+            footerText.style.marginTop = '15px';
+    }
+}
 }

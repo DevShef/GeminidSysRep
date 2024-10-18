@@ -1,0 +1,16 @@
+.table-container {
+    background-color: #e3f2fd; 
+    border-radius: 12px;
+    padding: 15px;
+    border: 2px solid #2a85d0; 
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.view-source {
+    color: #2a85d0; 
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+}

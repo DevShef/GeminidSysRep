@@ -50,4 +50,39 @@ export default class DatatableInlineEditWithApex extends LightningElement {
             );
         }
     }
-}
+
+    renderedCallback() {
+        const datatableContainer = this.template.querySelector('lightning-datatable');
+        if (datatableContainer) {
+            datatableContainer.style.backgroundColor = '#f5f7fa';
+            datatableContainer.style.borderRadius = '6px';
+            datatableContainer.style.padding = '10px';
+        }
+
+        const cardContainer = this.template.querySelector('lightning-card');
+        if (cardContainer) {
+            cardContainer.style.backgroundColor = '#ebf1f5';
+            cardContainer.style.padding = '15px';
+            cardContainer.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.1)';
+            cardContainer.style.border = '2px solid #2a85d0';
+        }
+
+        const footerText = this.template.querySelector('.footer-text');
+        if (footerText) {
+            footerText.style.color = 'darkblue';  
+            footerText.style.fontWeight = 'bold';   
+            footerText.style.fontSize = '14px';    
+            footerText.style.marginTop = '20px'; 
+        }
+
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.color = 'darkred';
+            viewSource.style.fontWeight = 'bold';
+            viewSource.style.fontSize = '14px';
+            footerText.style.textAlign = 'center'; 
+            viewSource.style.marginTop = '10px';
+        }
+    }
+} 
+

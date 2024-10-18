@@ -1,19 +1,25 @@
 .showDetailsColor{
-    background-color: rgb(240, 222, 198);
+    background-color: rgb(218, 218, 217);
     color: rgb(12, 99, 12);
     font-weight: bold;
+    font-size: medium;
+    margin-bottom: 15px;
+    padding: 5px;
+
 }
 
 .notShowDetailsColor{
-    background-color: rgb(216, 229, 190);
-    color: rgb(126, 29, 68);
+    color: rgb(185, 29, 53);
     font-weight: bold;
+    font-size: medium;
+    margin-bottom: 5px;
     
 }
 
 .viewSourceColor{
-    color: rgb(183, 101, 42);
+    color: rgb(7, 29, 137);
     font-size: medium;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    margin-top: 6px;
 }

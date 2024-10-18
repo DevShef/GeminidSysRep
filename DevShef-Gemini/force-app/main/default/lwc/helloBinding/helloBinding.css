@@ -1,18 +1,21 @@
 .helloBindingColor {
-    background-color: rgb(222, 243, 231);
+    background-color: #DDDBDA;
     font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    color: chocolate;
+    color: rgb(11, 57, 163);
+    padding: 10px;
 }
 
 .viewSourceColor{
-    color: chocolate;
+    color: rgb(130, 28, 8);
     font-size: medium;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .helptextSize{
-    font-size: x-small;
+    font-size: normal;
+    color: darkblue;
 }

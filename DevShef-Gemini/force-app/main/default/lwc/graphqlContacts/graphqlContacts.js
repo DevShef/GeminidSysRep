@@ -51,4 +51,27 @@ export default class GraphqlContacts extends LightningElement {
             Title: edge.node.Title.value
         }));
     }
+
+
+    renderedCallback() {
+        
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.color = '#2a85d0'; 
+            viewSource.style.fontWeight = 'bold';
+            viewSource.style.fontSize = '14px';
+        }
+
+        const footertext = this.template.querySelector('.footer-text');
+        if (footertext) {
+            footertext.style.color = '#2a85d0'; 
+            footertext.style.fontWeight = 'bold';
+            footertext.style.fontSize = '15px';
+        }
+
+    }
+
+    
+
+
 }

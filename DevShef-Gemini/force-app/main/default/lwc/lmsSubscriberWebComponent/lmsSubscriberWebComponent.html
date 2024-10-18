@@ -22,10 +22,15 @@
         </div>
 
         <c-view-source source="lwc/lmsSubscriberWebComponent" slot="footer">
+            <div class="footer-text">
+                <lightning-helptext 
+                    content="footer-text is in JS, coloring the footer text."
+                ></lightning-helptext>
             Subscribe to a Lightning Message Service channel that another LWC,
             Aura component, or Visualforce page publishes. This LWC subscribes
             to the <strong>Record_Selected__c</strong> event. Selecting a
             contact in one of the contact lists above publishes the event.
+            </div>
         </c-view-source>
     </lightning-card>
 </template>

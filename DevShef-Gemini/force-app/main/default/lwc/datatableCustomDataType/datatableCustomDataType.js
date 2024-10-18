@@ -51,12 +51,20 @@ export default class DatatableCustomDataType extends LightningElement {
 
         const footerText = this.template.querySelector('.footer-text');
         if (footerText) {
-            footerText.style.color = 'darkgreen';  
+            footerText.style.color = 'darkblue';  
             footerText.style.fontWeight = 'bold';   
             footerText.style.fontSize = '16px';    
             footerText.style.marginTop = '20px'; 
             footerText.style.textAlign = 'center'; 
             footerText.style.fontSize = '16px'
+        }
+
+        const viewSource = this.template.querySelector('c-view-source');
+        if (viewSource) {
+            viewSource.style.color = 'darkred';
+            viewSource.style.fontWeight = 'bold';
+            viewSource.style.fontSize = '14px';
+            viewSource.style.marginTop = '10px';
         }
     }
     
